@@ -53,6 +53,7 @@ Antimicrobial resistance is a critical global health threat. **ResistAI** aims t
 ## 🔄 Methodology & Workflow
 
 The ResistAI pipeline transforms raw AMR data into stewardship-ready insights through the following stages:
+```
 ┌───────────────────────────────┐
 │     ATLAS AMR Data Ingestion  │
 └──────────────┬────────────────┘
@@ -64,9 +65,9 @@ The ResistAI pipeline transforms raw AMR data into stewardship-ready insights th
                ↓
 ┌──────────────┴───────────────┐
 │  Analytical Modules (via     │
-│ Plotly & Bayesian Models)     │
+│ Plotly & Bayesian Models)    │
 │ – Demographics & Species     │
-│ – BHM Statistical Mapping     │
+│ – BHM Statistical Mapping    │
 └──────────────┬───────────────┘
                ↓
 ┌──────────────┴───────────────┐
@@ -85,6 +86,7 @@ The ResistAI pipeline transforms raw AMR data into stewardship-ready insights th
 │ – Forecasts & Predictions    │
 │ – Downloadable Models        │
 └──────────────────────────────┘
+```
 
 Each module is designed to support transparency, reproducibility, and stakeholder relevance.
 
