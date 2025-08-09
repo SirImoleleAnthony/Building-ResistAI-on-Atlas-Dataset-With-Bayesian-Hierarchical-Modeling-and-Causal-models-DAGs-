@@ -406,7 +406,7 @@ elif selected == 'About':
     - **Anthony Godswill Imolele**
         - Research Scientist at Genomics Unit, Helix Biogen Institute, Nigeria. 
         - Affiliation: Helix Biogen Institute, Ogbomosho, Nigeria.
-        - Computational Biologist, Computational Chemist, and Molecular Scientist.
+        - Computational Biologist, AI for Healthcare Researcher.
         - [LinkedIn](https://www.linkedin.com/in/godswill-anthony-850639199/)
 
     - **Teye Richard Gamah**
@@ -423,10 +423,10 @@ elif selected == 'About':
         - Affiliation: Department of Industrial and Systems Engineering, the Hong Kong Polytechnic University, Hung Hom, Hong Kong. 
         - Industrial Systems Engineering, Data Envelopment Analyst.
         - [LinkedIn](https://www.linkedin.com/in/temitope-kehinde/)
-        - **Orcid**: 0000-0001-7703-7395
     
     We believe that by combining our expertise in data science and healthcare, we can make a significant impact in understanding and combating antimicrobial resistance.
     """,
         unsafe_allow_html=True
     )
+
 
