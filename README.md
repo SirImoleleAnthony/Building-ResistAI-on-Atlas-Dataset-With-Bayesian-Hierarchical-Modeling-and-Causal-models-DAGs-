@@ -142,10 +142,10 @@ This project is licensed under the MIT License.
 - Pfizer ATLAS dataset – foundational AMR surveillance data
 - Vivli AMR Surveillance Data Challenge 2025 – for inspiration and support
 - Team members and contributors
-    - Member 1
-    - Member 2
-    - Member 3
-    - Member 4
+    - Anthony Godswill Imolele - [LinkedIn](https://www.linkedin.com/in/godswill-anthony-850639199/)
+    - Teye Richard Gamah - [LinkedIn](https://www.linkedin.com/in/gamah/)
+    - Afolabi Owoloye - [LinkedIn](https://www.linkedin.com/in/afolabi-owoloye-a1b8a5b5/)
+    - Kehinde Temitope Olubanjo - [LinkedIn](https://www.linkedin.com/in/temitope-kehinde/)
 - Open-source libraries – Streamlit, Plotly, Prophet, XGBoost, PyMC, scikit-learn, pandas, etc.
 
 **ResistAI**: _powering collaborative, actionable insights for antimicrobial resistance mitigation._
