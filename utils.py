@@ -1139,8 +1139,7 @@ def make_prediction(df, anti):
         st.warning(f"""
     🚨 **Insufficient Data to Make Predictions**
 
-    The selected combination of **{anti}** and _{selected_species}_ has only **{df.shape[0]}** records, which is below the minimum required (**{min_required_rows}**) for reliable prediction.
-    Or the selected _{selected_species}_ has **{resistance_types[0]}** resistance status to **{anti}** in the data.
+    The selected _{selected_species}_ has **{resistance_types[0].upper()}** resistance status to **{anti}** in the data.
 
     This data gap is more than a technical limitation—it reflects a broader challenge in antimicrobial resistance (AMR) surveillance.
 
@@ -1169,8 +1168,40 @@ def make_prediction(df, anti):
     label_mapping = {'Resistant': 2, 'Intermediate': 1, 'Susceptible': 0}
     df[anti_MIC] = df[anti_MIC].map(label_mapping)
 
+    # Drop rows with missing resistance labels
+    df = df.dropna(subset=[anti_MIC])
+
+    # Reindex class labels to start from 0
+    unique_classes = sorted(df[anti_MIC].dropna().unique())
+    class_remap = {old: new for new, old in enumerate(unique_classes)}
+    df[anti_MIC] = df[anti_MIC].map(class_remap)
+
+    # Split data
     X = df.drop(anti_MIC, axis=1)
     y = df[anti_MIC]
+
+    # Check if y is empty after filtering
+    num_classes = len(np.unique(y))
+
+    if y.empty or num_classes < 2:
+        st.warning(f"Not enough class diversity in resistance labels for _{selected_species}_ and *{anti}*. Cannot train model.")
+        
+        # Implications and call to action
+        return st.markdown("""
+        🚨 **Insufficient Data for Prediction**
+        The selected combination of **{anti}** and _{selected_species}_ has not enough resistance labels in the data for making predictions.
+        This data gap is more than a technical limitation—it reflects a broader challenge in antimicrobial resistance (AMR) surveillance.
+        📊 **Why This Matters**:
+        - Sparse data can obscure resistance trends and delay detection of emerging threats.
+        - Prediction models depend on consistent, high-quality inputs to guide empirical therapy.
+        - Data gaps weaken the foundation for evidence-based stewardship and policy decisions.
+        🧬 **Call to Action**:  
+        - Strengthen AMR data collection across healthcare settings.
+        - Standardize MIC reporting and phenotype classification.
+        - Invest in regional surveillance systems to close the data gap.
+        Let’s transform data scarcity into a catalyst for smarter stewardship and stronger policy.
+        """)
+    
 
     # Initialize encoders
     encoders = {}
@@ -1182,8 +1213,10 @@ def make_prediction(df, anti):
         encoders[col] = le
 
     # Train model
-    classifier = XGBClassifier(objective='multi:softmax', num_class=3,
-                               eval_metric='mlogloss', random_state=42)
+    classifier = XGBClassifier(objective='multi:softmax',
+                            num_class=num_classes,
+                            eval_metric='mlogloss',
+                            random_state=42)
     classifier.fit(X, y)
 
     # User input section (unchanged)
