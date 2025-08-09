@@ -1143,7 +1143,7 @@ def make_prediction(df, anti):
         st.warning(f"""
     🚨 **Insufficient Data to Make Predictions**
 
-    The selected _{selected_species}_ has **{resistance_types[0].upper()}** resistance status to **{anti}** in the data.
+    The selected _{selected_species}_ has **{resistance_types[0]}** resistance status to **{anti}** in the data.
 
     This data gap is more than a technical limitation—it reflects a broader challenge in antimicrobial resistance (AMR) surveillance.
 
@@ -1425,3 +1425,4 @@ def check_causal_effect(df, anti):
                     """)
 
     
+
