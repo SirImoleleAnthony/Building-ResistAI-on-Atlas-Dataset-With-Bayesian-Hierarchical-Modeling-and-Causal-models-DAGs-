@@ -903,15 +903,19 @@ def forecast(df, anti):
         if df_fc[col].dtype == 'object':
             mode_val = df_fc[col].mode()
             if not mode_val.empty:
-                df_fc[col].fillna(mode_val[0], inplace=True)
+                df_fc[col] = df_fc[col].fillna(mode_val[0])
+                #df_fc[col].fillna(mode_val[0], inplace=True)
             else:
-                df_fc[col].fillna("Unknown", inplace=True)  
+                df_fc[col] = df_fc[col].fillna("Unknown")
+                #df_fc[col].fillna("Unknown", inplace=True)  
         else:
             mean_val = df_fc[col].mean()
             if not np.isnan(mean_val):
-                df_fc[col].fillna(mean_val, inplace=True)
+                df_fc[col] = df_fc[col].fillna(mean_val)
+                #df_fc[col].fillna(mean_val, inplace=True)
             else:
-                df_fc[col].fillna(0, inplace=True) 
+                df_fc[col] = df_fc[col].fillna(0)
+                #df_fc[col].fillna(0, inplace=True)
 
     # Encode categorical variables
     le = LabelEncoder()
@@ -1285,7 +1289,8 @@ def check_causal_effect(df, anti):
     # Fill all `NaN` values with mode in all columns that have NaN values
     for col in df.columns:
         if df[col].dtype == 'object' and df[col].isnull().any():
-            df[col].fillna(df[col].mode()[0], inplace=True)
+            #df[col].fillna(df[col].mode()[0], inplace=True)
+            df[col] = df[col].fillna(df[col].mode()[0]).astype(str)
 
     # Select species
     species = df['Species'].unique().tolist()
