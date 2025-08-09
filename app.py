@@ -363,8 +363,7 @@ elif selected == 'Make Prediction':
     st.subheader("Causal Effect Estimation")
     utils.check_causal_effect(data, antibiotic)
     
-    st.write("This section allows you to make predictions on antibiotic resistance data using the trained machine learning models. You can input new data and get predictions based on the models.")
-
+# About Page
 elif selected == 'About':
     st.title("About ResistAI")
     st.subheader("About the Competition")
@@ -428,5 +427,6 @@ elif selected == 'About':
     """,
         unsafe_allow_html=True
     )
+
 
 
