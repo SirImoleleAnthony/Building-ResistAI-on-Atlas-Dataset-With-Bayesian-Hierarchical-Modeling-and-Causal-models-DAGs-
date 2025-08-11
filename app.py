@@ -68,8 +68,18 @@ antiotics_list = ['Amikacin', 'Amoxycillin clavulanate', 'Ampicillin', 'Azithrom
 if selected == 'Home':
     st.title("Welcome to ResistAI")
     st.subheader("Your AI-powered Antibiotic Resistance Analysis Tool")
-    st.markdown(""" Welcome to ResistAI, a Streamlit-powered interactive platform that synthesizes cutting‐edge analytics and AI to tackle antimicrobial resistance (AMR). By leveraging global surveillance data such as Pfizer’s ATLAS, ResistAI empowers users—scientists, policymakers, and healthcare stakeholders—to drive antimicrobial stewardship, shape informed policies, and engage key players in combating AMR.
+    st.markdown(""" Welcome to ResistAI+, a Streamlit-powered interactive platform that synthesizes cutting‐edge analytics and AI to tackle antimicrobial resistance (AMR). ResistAI+ is a cutting-edge Streamlit-based web application that transforms the fight against AMR by integrating causal machine learning, Bayesian statistical modeling, and time-series forecasting into one seamless, interactive platform. By leveraging global surveillance data such as Pfizer’s ATLAS, ResistAI empowers users—scientists, policymakers, and healthcare stakeholders—to drive antimicrobial stewardship, shape informed policies, and engage key players in combating AMR.
     """, unsafe_allow_html=True)
+
+    st.markdown("""
+        ## The Problem
+    The rise of antibiotic-resistant pathogens is accelerating. Traditional analytical tools struggle to:
+        1.	Integrate diverse demographic, bacterial, and resistance data in one place.
+        2.	Provide interpretable predictions of resistance risk, not just “black box” outputs.
+        3.	Forecast emerging resistance trends to inform preemptive policy action.
+    ResistAI+ directly addresses these gaps, turning complex AMR datasets into interactive, actionable intelligence.
+    """)
+    
     st.markdown("""
     ## Methodology
     Our workflow brings together data processing, statistical modeling, machine learning, forecasting, and interactive visualization. Here’s a high-level diagram of the methodology:
@@ -77,12 +87,14 @@ if selected == 'Home':
     st.image("work_flow.png", caption="ResistAI Methodology Diagram", use_column_width=True)
     st.markdown("""
     ## Features
+    ResistAI+ is not just another AMR dashboard, it is a decision-support system. It delivers five integrated capabilities that take the user from exploration to action:
     - **Data Analysis**: Explore and visualize antibiotic resistance data.
     - **Statistical Analysis**: Explore the results from statistical tests done using Bayesian Hierarchical Model (BHM) to understand data distributions and relationships.
     - **Train Model**: Train a causal machine learning models on antibiotic resistance data.
     - **Make a Forecast**: Use Prophet algorithm and its regressors to forecast antibiotic resistance trends.
     - **Make Prediction**: Predict antibiotic resistance using trained models and perform causal effect estimation.
     """)
+
     
     st.markdown("""
     ## Results
@@ -463,6 +475,7 @@ elif selected == 'About':
     """,
         unsafe_allow_html=True
     )
+
 
 
 
