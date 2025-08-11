@@ -96,6 +96,40 @@ if selected == 'Home':
     - **Accessible Tools for Stakeholders**: 
         - From downloadable trained models to intuitive dashboards, _ResistAI_ bridges data and action—delivering real-world utility for stewardship, policy, and stakeholder collaboration.
     """)
+        st.markdown("""
+    **Bayesian Modelling of Antimicrobial Resistance: Change‑points, MIC Creep, and Policy‑Ready Signals**
+    
+    Results from some selected antibiotics (Levofloxacin, Linezolid, and Meropenem)
+    - *Change-Points*:
+        The Bayesian Hierarchical Model (BHM) identified significant change-points in resistance trends.
+    """)
+    st.image("Results/country_small_multiples_levofloxacin.png", caption="Levofloxacin Change-Points", use_column_width=True)
+    st.image("Results/country_small_multiples_linezolid.png", caption="Linezolid Change-Points", use_column_width=True)
+    st.image("Results/country_small_multiples_meropenem.png", caption="Meropenem Change-Points", use_column_width=True)
+    st.markdown("""
+        - *MIC Creep*:
+        The BHM also detected MIC creep, indicating gradual increases in resistance levels over time.
+    """)
+    st.image("Results/Levofloxacin_temporal_trends.png", caption="Levofloxacin MIC Creep for Top Hotspot Countries", use_column_width=True)
+    st.image("Results/Levofloxacin_temporal_trends_continent.png", caption="Levofloxacin MIC Creep by Continents", use_column_width=True)
+    st.image("Results/Linezolid_temporal_trends.png", caption="Linezolid MIC Creep for Top Hotspot Countries", use_column_width=True)
+    st.image("Results/Linezolid_temporal_trends_continent.png", caption="Linezolid MIC Creep by Continent", use_column_width=True)
+    st.image("Results/Meropenem_temporal_trends.png", caption="Meropenem MIC Creep for Top Hotspot Countries", use_column_width=True)
+    st.image("Results/Meropenem_temporal_trends_continent.png", caption="Meropenem MIC Creep by Continent", use_column_width=True)
+    st.markdown("""
+        - *Policy-Ready Signals*:
+        The BHM results provide actionable insights for policymakers, highlighting areas of concern and potential interventions.
+    """)
+    st.image("Results/heatmap_global_positive.png", caption="Global-Positive Heatmap for Selected Organisms by Mechanism", use_column_width=True)
+    st.image("Results/policy_priority_heatmap_country.png", caption="Country Level Policy Priority for Selected Antibiotics", use_column_width=True)
+
+    st.markdown("""
+        - *NS by Year for Top 12 Countries*:
+        The BHM results also include a summary of the number of samples (NS) by year for the top 12 countries, providing a comprehensive overview of resistance trends in _E. coli_.
+    """)
+    st.image("Results/species_countries_Escherichia_coli_levofloxacin.png", caption="Levofloxacin NS by Year for E. coli", use_column_width=True)
+    st.image("Results/species_countries_Escherichia_coli_meropenem.png", caption="Meropenem NS by Year for E. coli", use_column_width=True)
+
     st.markdown("""
     ## Implications
     - **Informed Stewardship**:
@@ -428,4 +462,5 @@ elif selected == 'About':
     """,
         unsafe_allow_html=True
     )
+
 
