@@ -126,6 +126,9 @@ streamlit run app.py
 - Predictive modeling capabilities tailored to stakeholders’ needs.
 - A collaborative platform for transparent analysis and decision-making.
 
+**Bayesian Modelling of Antimicrobial Resistance: Change‑points, MIC Creep, and Policy‑Ready Signals**
+
+
 ## 🧭 Roadmap & Future Work
 - Incorporate genomic features and improve genetic data handling.
 - Add multi-drug resistance forecasting and ensemble modeling.
