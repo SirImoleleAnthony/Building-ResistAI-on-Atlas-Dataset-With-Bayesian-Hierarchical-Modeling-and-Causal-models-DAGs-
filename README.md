@@ -4,6 +4,7 @@
 
 **ResistAI** is a Streamlit-powered dashboard that transforms Pfizer’s ATLAS antimicrobial resistance (AMR) data into actionable insights for stewardship programs, policy-makers, and stakeholders. Explore data trends, perform statistical analysis, build predictive models, and forecast resistance dynamics through an interactive web interface.
 
+Access app [here](https://resistaiplus.streamlit.app/)
 ---
 
 ## 📚 Table of Contents
@@ -127,6 +128,9 @@ streamlit run app.py
 - A collaborative platform for transparent analysis and decision-making.
 
 **Bayesian Modelling of Antimicrobial Resistance: Change‑points, MIC Creep, and Policy‑Ready Signals**
+Results from some selected antibiotics (Levofloxacin, Linezolid, and Meropenem)
+- *Change-points*
+  ![Levofloxacin Change-Points](country_small_multiples_levofloxacin.png)
 
 
 ## 🧭 Roadmap & Future Work
