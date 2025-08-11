@@ -109,7 +109,7 @@ if selected == 'Home':
     - **Accessible Tools for Stakeholders**: 
         - From downloadable trained models to intuitive dashboards, _ResistAI_ bridges data and action—delivering real-world utility for stewardship, policy, and stakeholder collaboration.
     """)
-        st.markdown("""
+    st.markdown("""
     **Bayesian Modelling of Antimicrobial Resistance: Change‑points, MIC Creep, and Policy‑Ready Signals**
     
     Results from some selected antibiotics (Levofloxacin, Linezolid, and Meropenem)
@@ -475,6 +475,7 @@ elif selected == 'About':
     """,
         unsafe_allow_html=True
     )
+
 
 
 
