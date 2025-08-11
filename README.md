@@ -129,9 +129,39 @@ streamlit run app.py
 
 **Bayesian Modelling of Antimicrobial Resistance: Change‑points, MIC Creep, and Policy‑Ready Signals**
 Results from some selected antibiotics (Levofloxacin, Linezolid, and Meropenem)
-- *Change-points*
+- *Change-points*: The Bayesian Hierarchical Model (BHM) identified significant change-points in resistance trends.
 
   Levofloxacin Change-Points ![Levofloxacin Change-Points](Results/country_small_multiples_levofloxacin.png)
+
+  Linezolid Change-Points ![Linezolid Change-Points](Results/country_small_multiples_linezolid.png)
+
+  Meropenem Change-Points ![Meropenem Change-Points](Results/country_small_multiples_meropenem.png)
+
+- *MIC Creep*: The BHM also detected MIC creep, indicating gradual increases in resistance levels over time.
+
+  Levofloxacin MIC Creep for Top Hotspot Countries ![Levofloxacin MIC Creep for Top Hotspot Countries](Results/Levofloxacin_temporal_trends.png)
+
+  Levofloxacin MIC Creep by Continents ![Levofloxacin MIC Creep by Continents](Results/Levofloxacin_temporal_trends_continent.png)
+
+  Linezolid MIC Creep for Top Hotspot Countries ![Linezolid MIC Creep for Top Hotspot Countries](Results/Linezolid_temporal_trends.png)
+
+  Linezolid MIC Creep by Continent ![Linezolid MIC Creep by Continent](Results/Linezolid_temporal_trends_continent.png)
+
+  Meropenem MIC Creep for Top Hotspot Countries ![Meropenem MIC Creep for Top Hotspot Countries](Results/Meropenem_temporal_trends.png)
+
+  Meropenem MIC Creep by Continent ![Meropenem MIC Creep by Continent](Results/Meropenem_temporal_trends_continent.png)
+
+  - *Policy-Ready Signals*: The BHM results provide actionable insights for policymakers, highlighting areas of concern and potential interventions.
+ 
+  Global-Positive Heatmap for Selected Organisms by Mechanism ![Global-Positive Heatmap for Selected Organisms by Mechanism](Results/heatmap_global_positive.png)
+
+  Country Level Policy Priority for Selected Antibiotics [Country Level Policy Priority for Selected Antibiotics](Results/policy_priority_heatmap_country.png)
+
+  - *NS by Year for Top 12 Countries*: The BHM results also include a summary of the number of samples (NS) by year for the top 12 countries, providing a comprehensive overview of resistance trends in _E. coli_.
+ 
+  Levofloxacin NS by Year for _E. coli_ [Levofloxacin NS by Year for E. coli](Results/species_countries_Escherichia_coli_levofloxacin.png)
+
+  Meropenem NS by Year for _E. coli_ [Meropenem NS by Year for E. coli](species_countries_Escherichia_coli_meropenem.png)
 
 
 ## 🧭 Roadmap & Future Work
