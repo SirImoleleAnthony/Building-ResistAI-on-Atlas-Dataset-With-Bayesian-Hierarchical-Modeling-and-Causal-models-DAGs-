@@ -83,6 +83,7 @@ if selected == 'Home':
     - **Make a Forecast**: Use Prophet algorithm and its regressors to forecast antibiotic resistance trends.
     - **Make Prediction**: Predict antibiotic resistance using trained models and perform causal effect estimation.
     """)
+    
     st.markdown("""
     ## Results
     - **Robust Visual Analytics**: 
@@ -462,5 +463,6 @@ elif selected == 'About':
     """,
         unsafe_allow_html=True
     )
+
 
 
