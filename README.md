@@ -130,7 +130,7 @@ streamlit run app.py
 **Bayesian Modelling of Antimicrobial Resistance: Change‑points, MIC Creep, and Policy‑Ready Signals**
 Results from some selected antibiotics (Levofloxacin, Linezolid, and Meropenem)
 - *Change-points*
-  ![Levofloxacin Change-Points](Results/country_small_multiples_levofloxacin.png)
+  Levofloxacin Change-Points ![Levofloxacin Change-Points](Results/country_small_multiples_levofloxacin.png)
 
 
 ## 🧭 Roadmap & Future Work
