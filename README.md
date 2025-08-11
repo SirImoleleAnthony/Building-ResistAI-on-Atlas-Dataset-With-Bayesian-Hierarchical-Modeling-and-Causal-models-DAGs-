@@ -155,13 +155,13 @@ Results from some selected antibiotics (Levofloxacin, Linezolid, and Meropenem)
  
   Global-Positive Heatmap for Selected Organisms by Mechanism ![Global-Positive Heatmap for Selected Organisms by Mechanism](Results/heatmap_global_positive.png)
 
-  Country Level Policy Priority for Selected Antibiotics [Country Level Policy Priority for Selected Antibiotics](Results/policy_priority_heatmap_country.png)
+  Country Level Policy Priority for Selected Antibiotics ![Country Level Policy Priority for Selected Antibiotics](Results/policy_priority_heatmap_country.png)
 
   - *NS by Year for Top 12 Countries*: The BHM results also include a summary of the number of samples (NS) by year for the top 12 countries, providing a comprehensive overview of resistance trends in _E. coli_.
  
-  Levofloxacin NS by Year for _E. coli_ [Levofloxacin NS by Year for E. coli](Results/species_countries_Escherichia_coli_levofloxacin.png)
+  Levofloxacin NS by Year for _E. coli_ ![Levofloxacin NS by Year for E. coli](Results/species_countries_Escherichia_coli_levofloxacin.png)
 
-  Meropenem NS by Year for _E. coli_ [Meropenem NS by Year for E. coli](species_countries_Escherichia_coli_meropenem.png)
+  Meropenem NS by Year for _E. coli_ ![Meropenem NS by Year for E. coli](species_countries_Escherichia_coli_meropenem.png)
 
 
 ## 🧭 Roadmap & Future Work
