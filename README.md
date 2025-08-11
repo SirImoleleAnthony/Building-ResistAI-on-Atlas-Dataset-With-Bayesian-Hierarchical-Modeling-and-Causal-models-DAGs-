@@ -1,6 +1,6 @@
 # Building-ResistAI-on-Atlas-Dataset-With-Bayesian-Hierarchical-Modeling-and-Causal-models-DAGs
 
-# 🧬 ResistAI – AMR Stewardship Platform
+# 🧬 ResistAI+ – AMR Stewardship Platform
 
 **ResistAI** is a Streamlit-powered dashboard that transforms Pfizer’s ATLAS antimicrobial resistance (AMR) data into actionable insights for stewardship programs, policy-makers, and stakeholders. Explore data trends, perform statistical analysis, build predictive models, and forecast resistance dynamics through an interactive web interface.
 
@@ -28,29 +28,36 @@ Access app [here](https://resistaiplus.streamlit.app/)
 
 ## 🧠 Introduction
 
-Antimicrobial resistance is a critical global health threat. **ResistAI** aims to empower decision-makers by transforming surveillance data into insights. By integrating statistical modeling, machine learning, forecasting, and visualization, it supports targeted interventions, data-driven policies, and stakeholder collaboration.
+Antimicrobial Resistance (AMR) is one of the greatest threats to global health, rendering once-effective treatments like Cefixime increasingly powerless. **ResistAI+** is a cutting-edge Streamlit-based web application that transforms the fight against AMR by integrating causal machine learning, Bayesian statistical modeling, and time-series forecasting into one seamless, interactive platform. Leveraging Pfizer’s ATLAS dataset, ResistAI+ empowers clinicians, researchers, and policymakers with real-time, evidence-driven insights to understand resistance mechanisms, predict resistance status, and forecast future trends, enabling smarter, targeted interventions that can save lives.
 
 ---
 
+## The Problem
+The rise of antibiotic-resistant pathogens is accelerating. Traditional analytical tools struggle to:
+1.	Integrate diverse demographic, bacterial, and resistance data in one place.
+2.	Provide interpretable predictions of resistance risk, not just “black box” outputs.
+3.	Forecast emerging resistance trends to inform preemptive policy action.
+ResistAI+ directly addresses these gaps, turning complex AMR datasets into interactive, actionable intelligence.
+---
 ## 🚀 Key Features
 
-- **Interactive Data Exploration**  
-  Visualize demographic, species, and antibiotic-specific resistance patterns.
-
-- **Bayesian Hierarchical Modeling (BHM)**  
-  Map baseline resistance trends, hotspots, and MIC creep over time.
-
-- **Machine Learning + Causal Inference**  
-  Train classifiers and estimate causal effects via DAGs.
-
-- **Time-Series Forecasting**  
-  Leverage Prophet with domain regressors to project future resistance signals.
-
-- **User-Friendly Streamlit Frontend**  
-  Intuitive navigation, interactive visuals, and model export capabilities.
-
+ResistAI+ is not just another AMR dashboard, it is a decision-support system.
+It delivers five integrated capabilities that take the user from exploration to action:
+1.	**Data Analysis**: Explore interactive, hover-enabled visualizations (Plotly) of demographic, bacterial, and resistance data, enriched with real-time observations, implications, and recommendations for clinical action.
+2.	**Statistical Analysis**: Unlock Bayesian Hierarchical Modeling (BHM) insights with precomputed visualizations, uncovering spatial clusters and temporal shifts in resistance rates, with continent/year-level effects modeled for precision.
+3.	**Train Model**: Build predictive models for any antibiotic–bacteria pair using nine classification algorithms (e.g., XGBoost, Random Forest, Logistic Regression). Enhance interpretability with DAG-based causal effect estimation via DoWhy, revealing which biological or contextual factors drive resistance.
+4.	**Make a Forecast**: Anticipate resistance threats with Prophet-based forecasting of future resistance trends, helping governments and hospitals plan years ahead.
+5.	**Make Prediction**: Generate real-time, condition-specific resistance predictions with 97% accuracy, backed by causal effect analysis that explains why resistance is likely.
 ---
 
+## Innovation Highlights
+1.	Causal Machine Learning at Scale: Goes beyond correlation, using Directed Acyclic Graphs (DAGs) to reveal cause-and-effect relationships between key treatments (Phenotype, Source, Country) and resistance outcomes.
+2.	Clinical-Grade Performance: XGBoost delivers up to 97% accuracy with precision, recall, and F1-scores consistently above 96%.
+3.	Dynamic Interpretability: Users not only get predictions but also see why they’re made, enabling trust in high-stakes clinical decisions.
+4.	Global Insight, Local Action: Bayesian modeling identifies regional AMR hotspots, while forecasts prepare stakeholders for upcoming threats.
+5.	Resilient to Sparse Data: Focuses on non-gene clinical and demographic features to overcome 90% missing gene data, ensuring robustness.
+
+---
 ## 🔄 Methodology & Workflow
 
 The ResistAI pipeline transforms raw AMR data into stewardship-ready insights through the following stages:
@@ -109,6 +116,7 @@ pip install -r requirements.txt
 ### Run app
 streamlit run app.py
 
+---
 ## 📄 Pages & Functionality
 
 - **Home** - Project overview, methodology, and call-to-action navigation
@@ -119,6 +127,7 @@ streamlit run app.py
 - **Make Prediction**	- Predict susceptibility status, estimate causal effects, and share results
 - **About** - Acknowledge contributors, data sources, and challenge details
 
+---
 ## 📈 Results & Impact
 
 **ResistAI delivers**:
@@ -162,20 +171,21 @@ Results from some selected antibiotics (Levofloxacin, Linezolid, and Meropenem)
   Levofloxacin NS by Year for _E. coli_ ![Levofloxacin NS by Year for E. coli](Results/species_countries_Escherichia_coli_levofloxacin.png)
 
   Meropenem NS by Year for _E. coli_ ![Meropenem NS by Year for E. coli](Results/species_countries_Escherichia_coli_meropenem.png)
-
+---
 
 ## 🧭 Roadmap & Future Work
 - Incorporate genomic features and improve genetic data handling.
 - Add multi-drug resistance forecasting and ensemble modeling.
 - Enhance UI with dashboards, user onboarding, and multilingual support.
 - Automate model retraining and deployment via CI/CD pipelines.
+---
 
 ## 🤝 Contributing
 This project is a submission for the 2025 Vivli AMR Surveillance Data Challenge. As such, external contributions are not required at this time. However, suggestions for enhancement, UI improvements, or stewardship-focused extensions are welcome via issues or discussions.
-
+---
 ## 📄 License
 This project is licensed under the MIT License.
-
+---
 ## 🙏 Acknowledgments
 - Pfizer ATLAS dataset – foundational AMR surveillance data
 - Vivli AMR Surveillance Data Challenge 2025 – for inspiration and support
