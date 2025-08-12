@@ -141,6 +141,7 @@ if selected == 'Home':
         The BHM results also include a summary of the number of samples (NS) by year for the top 12 countries, providing a comprehensive overview of resistance trends in _E. coli_.
     """)
     st.image("Results/species_countries_Escherichia_coli_levofloxacin.png", caption="Levofloxacin NS by Year for E. coli", use_column_width=True)
+    st.image("Results/species_countries_Escherichia_coli_linezolid.jpeg", caption="Linezolid NS by Year for E. coli", use_column_width=True)
     st.image("Results/species_countries_Escherichia_coli_meropenem.png", caption="Meropenem NS by Year for E. coli", use_column_width=True)
 
     st.markdown("""
@@ -475,6 +476,7 @@ elif selected == 'About':
     """,
         unsafe_allow_html=True
     )
+
 
 
 
