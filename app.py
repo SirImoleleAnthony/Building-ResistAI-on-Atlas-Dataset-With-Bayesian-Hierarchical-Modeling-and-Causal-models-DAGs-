@@ -155,7 +155,7 @@ if selected == 'Home':
     - **Educational Resource**:
         - ResistAI+ can be used as an educational tool to raise awareness about antibiotic resistance among healthcare professionals, students, and the general public, fostering a culture of responsible antibiotic use.
     """)
-    st.subheader("Experience ResistAI in action! Navigate seamlessly through the app using the menu above.")
+    st.subheader("Experience ResistAI+ in action! Navigate seamlessly through the app using the menu above.")
     st.markdown("""
     - **Data Analysis** — Explore the landscape of demographics, species, and antibiotic resistance.
     - **Statistical Analysis** — Dive deep into Bayesian mappings of resistance trends and hotspots.
@@ -479,6 +479,7 @@ elif selected == 'About':
     """,
         unsafe_allow_html=True
     )
+
 
 
 
