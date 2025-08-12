@@ -33,7 +33,7 @@ from io import BytesIO
 import utils
 
 #-----------Web page setting-------------------#
-page_title = "ResistAI"
+page_title = "ResistAI+"
 page_icon = "🦠🧬💊"
 picker_icon = "👇"
 #layout = "centered"
@@ -66,7 +66,7 @@ antiotics_list = ['Amikacin', 'Amoxycillin clavulanate', 'Ampicillin', 'Azithrom
 
 
 if selected == 'Home':
-    st.title("Welcome to ResistAI")
+    st.title("Welcome to ResistAI+")
     st.subheader("Your AI-powered Antibiotic Resistance Analysis Tool")
     st.markdown(""" Welcome to ResistAI+, a Streamlit-powered interactive platform that synthesizes cutting‐edge analytics and AI to tackle antimicrobial resistance (AMR). ResistAI+ is a cutting-edge Streamlit-based web application that transforms the fight against AMR by integrating causal machine learning, Bayesian statistical modeling, and time-series forecasting into one seamless, interactive platform. By leveraging global surveillance data such as Pfizer’s ATLAS, ResistAI empowers users—scientists, policymakers, and healthcare stakeholders—to drive antimicrobial stewardship, shape informed policies, and engage key players in combating AMR.
     """, unsafe_allow_html=True)
@@ -103,11 +103,11 @@ if selected == 'Home':
     -  **Statistical Insight via Bayesian Hierarchical Modeling**: 
         - Reliable mapping of baseline resistance and temporal trends, including MIC "creep," with credible intervals visualized across countries and continents.
     -  **Machine Learning & Causal Frameworks**: 
-        - Users can train classification models to predict resistance status, supported by causal inference through Directed Acyclic Graphs. Model performance metrics, feature importance, and causal effect plots are delivered interactively.
+        - Users can train classification models to predict resistance status, supported by causal inference through Directed Acyclic Graphs (DAG). Model performance metrics, feature importance, and causal effect plots are delivered interactively.
     - **Forecasting Capabilities**: 
         - Time-series MIC forecasting using Prophet, with key regressors and trend lines enabling future-focused decision-making.    
     - **Accessible Tools for Stakeholders**: 
-        - From downloadable trained models to intuitive dashboards, _ResistAI_ bridges data and action—delivering real-world utility for stewardship, policy, and stakeholder collaboration.
+        - From downloadable trained models to intuitive dashboards, **ResistAI+** bridges data and action—delivering real-world utility for stewardship, policy, and stakeholder collaboration.
     """)
     st.markdown("""
     **Bayesian Modelling of Antimicrobial Resistance: Change‑points, MIC Creep, and Policy‑Ready Signals**
@@ -147,13 +147,13 @@ if selected == 'Home':
     st.markdown("""
     ## Implications
     - **Informed Stewardship**:
-        - By providing a comprehensive view of antibiotic resistance patterns, ResistAI enables healthcare professionals to make informed decisions about antibiotic use, ultimately contributing to better patient outcomes and reduced resistance rates.
+        - By providing a comprehensive view of antibiotic resistance patterns, ResistAI+ enables healthcare professionals to make informed decisions about antibiotic use, ultimately contributing to better patient outcomes and reduced resistance rates.
     - **Policy Development**: 
-        - The insights generated from ResistAI can inform policymakers about the current state of antibiotic resistance, helping them to develop effective policies and guidelines for antibiotic use and stewardship.
+        - The insights generated from ResistAI+ can inform policymakers about the current state of antibiotic resistance, helping them to develop effective policies and guidelines for antibiotic use and stewardship.
     - **Global Collaboration**:
-        - ResistAI serves as a platform for global collaboration, allowing researchers and healthcare professionals to share data, insights, and best practices in the fight against antimicrobial resistance.
+        - ResistAI+ serves as a platform for global collaboration, allowing researchers and healthcare professionals to share data, insights, and best practices in the fight against antimicrobial resistance.
     - **Educational Resource**:
-        - ResistAI can be used as an educational tool to raise awareness about antibiotic resistance among healthcare professionals, students, and the general public, fostering a culture of responsible antibiotic use.
+        - ResistAI+ can be used as an educational tool to raise awareness about antibiotic resistance among healthcare professionals, students, and the general public, fostering a culture of responsible antibiotic use.
     """)
     st.subheader("Experience ResistAI in action! Navigate seamlessly through the app using the menu above.")
     st.markdown("""
@@ -413,7 +413,7 @@ elif selected == 'Make Prediction':
     
 # About page
 elif selected == 'About':
-    st.title("About ResistAI")
+    st.title("About ResistAI+")
     st.subheader("About the Competition")
     st.markdown(
         """
@@ -443,8 +443,11 @@ elif selected == 'About':
     
     Read more about the Pfizer's ATLAS Program dataset [here](https://amr.vivli.org/members/research-programs/).
     """, unsafe_allow_html=True)
-    
 
+    st.subheader("About the App")
+    st.markdown("""
+        ResistAI+ is a cutting-edge Streamlit-based web application that transforms the fight against AMR by integrating causal machine learning, Bayesian statistical modeling, and time-series forecasting into one seamless, interactive platform. Leveraging Pfizer’s ATLAS dataset, ResistAI+ empowers clinicians, researchers, and policymakers with real-time, evidence-driven insights to understand resistance mechanisms, predict resistance status, and forecast future trends, enabling smarter, targeted interventions that can save lives.
+        """)
     st.subheader("About the Team")
     st.markdown(
         """
@@ -476,6 +479,7 @@ elif selected == 'About':
     """,
         unsafe_allow_html=True
     )
+
 
 
 
