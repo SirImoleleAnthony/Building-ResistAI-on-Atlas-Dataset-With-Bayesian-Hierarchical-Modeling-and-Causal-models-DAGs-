@@ -1425,4 +1425,3 @@ def check_causal_effect(df, anti):
                     """)
 
     
-
