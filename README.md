@@ -193,7 +193,7 @@ This project is licensed under the MIT License.
 ## 🙏 Acknowledgments
 - Pfizer ATLAS dataset – foundational AMR surveillance data
 - Vivli AMR Surveillance Data Challenge 2025 – for inspiration and support
-- Team members and contributors
+- Team members and contributors:
     - Anthony Godswill Imolele - [LinkedIn](https://www.linkedin.com/in/godswill-anthony-850639199/)
     - Teye Richard Gamah - [LinkedIn](https://www.linkedin.com/in/gamah/)
     - Afolabi Owoloye - [LinkedIn](https://www.linkedin.com/in/afolabi-owoloye-a1b8a5b5/)
